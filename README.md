@@ -6,6 +6,14 @@ When building various toolchains using crosstools-ng and crosstool, there are a 
 
 Personally, I always build my toolchains to be static (when possible). This prevents any coupling between the container and the toolchain itself, allowing me to archive and transfer the toolchain to an appropriate environment.
 
+## Precautions
+
+It has to be said that, below you will find an extremely large swath of versions for GNU toolchains. These versions cover roughly ~30 years of development and refinement of the tools. By no means should you expect that any configuration plugged into the system will work. In fact, deviating to far from the starting point samples is likely to get you compilers errors quite quickly. 
+
+The goal here isn't to make a full proof system that always works. Its to allow you to use a working configuration on any (Linux) system and have that same configuration be repeatable on different systems. This system also provides a large number of sane build options that *should* build. My general mindset is to build either the oldest API (for compatibility) or the newest API (for feature rich capability). Everything in between are for those edge cases where you need to _thread the needle_ with fragile code bases.
+
+The main take away is that your mileage may vary, but this X-Tools suite is easy to get started with but difficult to master without a high level of expertise in toolchain construction.
+
 ## Layout
 
 This X-Tools suite is composed a directory structure convention:
@@ -41,12 +49,60 @@ This is the primary output for the toolchains being built. If you've opted to bu
 
 When you decide that a new toolchain is the correct decision, you'll need to identify which environment is best suited to your needs.
 
+### ct-ng-1.25.0
+
+- Core
+  - Linux: 5.16.9 thru 3.2.101
+  - Binutils: 2.38 thru 2.26.1
+  - Libc
+    - Glibc: 2.28 thru 2.17
+    - uclibc-ng: 1.0.39 thru 1.0.25
+    - musl: 1.2.2 thru 1.1.6
+    - mingw: 9.0.0 thru 4.0.6
+    - newlib: 4.1.0 thru 2.5.0
+    - bionic: 21 thru 28
+  - Gcc: 11.2.0 thru 4.9.4
+- Debug
+  - duma: 2_5_15
+  - gdb: 11.2. thru 8.3.1 (cross & native)
+  - ltrace: 0.7.3
+  - strace: 5.16
+- Libs
+  - cloog: 0.18.4
+  - expat: 2.4.1
+  - gettext: 0.21 thru 0.19.8.1
+  - gmp: 6.2.1 thru 6.1.2
+  - isl: 0.24 thru 0.15
+  - libelf: 0.8.13
+  - libiconv: 1.16 thru 1.15
+  - mpc: 1.2.0 thru 1.0.3
+  - mpfr: 4.1.0 thru 3.1.6
+  - ncurses: 6.2 thru 6.0
+  - zlib: 1.2.12
+- Tools
+  - autoconf: 2.71 thru 2.65
+  - automake: 1.16.1 thru 1.15.1
+  - bison: 3.5 thru 3.0.5
+  - dtc: 1.6.0 thru 1.4.7
+  - libtool: 2.4.6
+  - m4: 1.4.19
+  - make: 4.3 thru 4.2.1
+- Use Cases
+  - If you want the newest and strictest compiler and toolchain, here you go.
+  - LLVM isn't cutting it for you? Try GCC 11. It'll throw warning at you like a kid at the dunk a wench stand.
+
 ### ct-ng-1.24.0
 
 - Core
   - Linux: 4.20.8 thru 3.2.101
   - Binutils: 2.32 thru 2.26.1
-  - Glibc: 2.28 thru 2.12.1
+  - Libc
+    - Glibc: 2.28 thru 2.12.1
+    - uclibc-ng: 1.0.31 thru 1.0.25
+    - musl: 1.1.21 thru 1.1.6
+    - mingw: 6.0.0 thru 4.0.6
+    - newlib: 3.1.0 thru 2.5.0
+    - bionic: 21 thru 28
   - Gcc: 8.3.0 thru 4.9.4
 - Debug
   - duma: 2_5_15
@@ -73,8 +129,10 @@ When you decide that a new toolchain is the correct decision, you'll need to ide
   - libtool: 2.4.6
   - m4: 1.4.18
   - make: 4.2.1
+- Use cases:
+  - A _modern_ set of tools that predate the COVID pandemic and predate a lot of philosophical changes in how/when software releases occur.
 
-## ct-ng-1.19.0
+### ct-ng-1.19.0
 
 - Core
   - Linux: 3.10.2 thru 2.6.27.62
@@ -96,8 +154,13 @@ When you decide that a new toolchain is the correct decision, you'll need to ide
   - ppl: 0.11.2 thru 0.10.2
   - cloog: 0.15.11 thru 0.15.6
   - libelf: 0.8.13 thru 0.8.12
+- Use Cases
+  - Building with an older binutils or gcc can work better with some versions of packages.
+  - Building a LTS version of Linux 2.6. 
+  - Linux has compiler configurations that are version specific.
+  - Building a system with the old eglibc (now merged into upstream glibc).
 
-# kegel-ct-0.43
+### kegel-ct-0.43
 
 - Core
   - Linux: 2.6.15.4 thru 2.6.8 / 2.4.26 / historically 2.2.X
@@ -107,6 +170,10 @@ When you decide that a new toolchain is the correct decision, you'll need to ide
 - Misc
   - gcrypt: 2.1
   - gdb: 6.5
+- Use Cases
+  - This tool is based purely on glibc based toolchains.
+  - You need to build something with gcc-2.95 (e.g. Linux 2.4 or Linux 2.2)
+  - You need to build something with gcc-3 or assembly with old binutils.
 
 ## Usage
 
@@ -158,6 +225,13 @@ $ ./config.sh my-build-alias
 $ ./build.sh my-build-alias
 # Builds toolchain.
 
-$ ../x-tools/binutils-2.15-gcc-3.4.5-linux-2.6.8-glibc-2.3.6/mips-static-linux-gnu/bin/mips-static-linux-gnu-gcc --version
-
+$ ../x-tools/binutils-2.15-gcc-3.4.5-linux-2.6.8-glibc-2.3.6/mips-unknown-linux-gnu/bin/mips-unknown-linux-gnu-gcc --version
+mips-unknown-linux-gnu-gcc (GCC) 3.4.5
+Copyright (C) 2004 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
+
+## Resources
+
+It has to be said that the bulk of the work being done in this suite is made possible by the contributors of [crosstool-ng](https://crosstool-ng.github.io/), [kegel's crosstool](http://kegel.com/crosstool/) and Bill Gatliff's [crossgcc FAQ and build script](). 
