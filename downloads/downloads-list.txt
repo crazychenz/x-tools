@@ -1,74 +1,82 @@
-binutils-2.14.tar.bz2
-binutils-2.15.tar.bz2
-binutils-2.19.1a.tar.bz2
-binutils-2.25.tar.bz2
-binutils-2.32.tar.xz
-cloog-0.18.0.tar.gz
-cloog-0.18.1.tar.gz
-cloog-0.18.4.tar.gz
-dmalloc-5.5.2.tgz
-downloads-list.txt
-duma_2_5_15.tar.gz
-expat-2.1.0.tar.gz
-expat-2.2.6.tar.bz2
-gcc-2.95.3.tar.gz
-gcc-3.3.2.tar.bz2
-gcc-3.3.6.tar.bz2
-gcc-3.4.5.tar.bz2
-gcc-4.3.2.tar.bz2
-gcc-4.9.2.tar.bz2
-gcc-4.9.4.tar.bz2
-gcc-5.5.0.tar.xz
-gcc-6.5.0.tar.xz
-gcc-7.4.0.tar.xz
-gcc-8.3.0.tar.xz
-gdb-6.3a.tar.bz2
-gdb-6.5a.tar.bz2
-gdb-6.5.tar.bz2
-gdb-6.8a.tar.bz2
-gdb-7.9.1.tar.xz
-gdb-8.2.1.tar.xz
-gettext-0.19.8.1.tar.xz
-glibc-2.21.tar.xz
-glibc-2.2.5.tar.gz
-glibc-2.28.tar.xz
-glibc-2.29.tar.xz
-glibc-2.3.6.tar.bz2
-glibc-2.3.tar.bz2
-glibc-2.9.tar.bz2
-glibc-linuxthreads-2.2.5.tar.gz
-glibc-linuxthreads-2.3.6.tar.bz2
-glibc-ports-2.9.tar.bz2
-gmp-4.3.2.tar.bz2
-gmp-6.0.0a.tar.xz
-gmp-6.1.2.tar.xz
-isl-0.12.2.tar.xz
-isl-0.14.tar.xz
-isl-0.15.tar.bz2
-isl-0.18.tar.xz
-isl-0.20.tar.bz2
-libelf-0.8.13.tar.gz
-libiconv-1.15.tar.gz
-linux-2.4.26.tar.gz
-linux-2.6.27.62.tar.gz
-linux-2.6.31.14.tar.bz2
-linux-2.6.8.tar.gz
-linux-2.6.9.tar.bz2
-linux-2.6.9.tar.gz
-linux-3.10.4.tar.gz
-linux-3.2.101.tar.xz
-linux-4.0.4.tar.xz
-linux-4.20.8.tar.xz
-linux-libc-headers-2.6.12.0.tar.bz2
-ltrace_0.7.3.orig.tar.bz2
-mpc-1.0.2.tar.gz
-mpc-1.1.0.tar.gz
-mpfr-2.4.2.tar.bz2
-mpfr-3.1.2.tar.xz
-mpfr-4.0.2.tar.xz
-ncurses-5.9.tar.gz
-ncurses-6.1.tar.gz
-newlib-3.1.0.20181231.tar.gz
-strace-4.26.tar.xz
-strace-4.5.19.tar.bz2
-zlib-1.2.11.tar.xz
+66b4f057bf687126d7cc11d0a68ed89182541ae7  binutils-2.14.tar.bz2
+9ac6e47be8cd78385d3d5e09c6bb420e357c4c07  binutils-2.15.tar.bz2
+3d3aa0a586dde416b1883d245f51c2335b621e3d  binutils-2.19.1a.tar.bz2
+525255ca6874b872540c9967a1d26acfbc7c8230  binutils-2.21.1a.tar.bz2
+b46cc90ebaba7ffcf6c6d996d60738881b14e50d  binutils-2.25.tar.bz2
+cd45a512af1c8a508976c1beb4f5825b3bb89f4d  binutils-2.32.tar.xz
+85f620a26aabf6a934c44ca40a9799af0952f863  cloog-0.18.0.tar.gz
+2dc70313e8e2c6610b856d627bce9c9c3f848077  cloog-0.18.1.tar.gz
+8f7568ca1873f8d55bb694c8b9b83f7f4c6c1aa5  cloog-0.18.4.tar.gz
+20719de78decbd724bc3ab9d6dce2ea5e5922335  dmalloc-5.5.2.tgz
+8ffc943431ca302c2147da06825dd5fca974690b  downloads-list.txt
+f1f90620c5eff4e76316594fa3e7e5a6833b8d0d  duma_2_5_15.tar.gz
+15dda079bc6bda4527479a84c31010ed084d3109  eglibc-2_13.tar.bz2
+4e2321bdbca3eb5acef7bf39b5da4a6e866f5a5e  eglibc-ports-2_13.tar.bz2
+b08197d146930a5543a7b99e871cba3da614f6f0  expat-2.1.0.tar.gz
+c8947fc3119a797b55485f2f7bdaaeb49cc9df01  expat-2.2.6.tar.bz2
+535d27038d161c0e7c2662702e11a48aa97ef622  gcc-2.95.3.tar.gz
+8750024a3e5a79d17a610d93cb5f171097e3ffee  gcc-3.3.2.tar.bz2
+2cc43978bb09af6c2ccfdf74797d10d7cc2596fb  gcc-3.3.6.tar.bz2
+389bcc98e391545e501c05557a8651104beac059  gcc-3.4.5.tar.bz2
+787b566ad4f386a9896e2d5703e6ff5e7ccaca58  gcc-4.3.2.tar.bz2
+fc5e6c60b03650f6508470c088440d3d9360adf9  gcc-4.4.6.tar.bz2
+79dbcb09f44232822460d80b033c962c0237c6d8  gcc-4.9.2.tar.bz2
+5bb0b783a57a62b11f1f9bd2aa37145da221d3d0  gcc-4.9.4.tar.bz2
+0d985aaf6d63598916933a690cb902d47d385bea  gcc-5.5.0.tar.xz
+368b3f5d294b1a8727b372ac0a77703d8b41968a  gcc-6.5.0.tar.xz
+bf09553cfa08ae6e29dfbbd541e5c69c3cbc6c66  gcc-7.4.0.tar.xz
+c27f4499dd263fe4fb01bcc5565917f3698583b2  gcc-8.3.0.tar.xz
+9a46e25b14de9230291dbc64dab1788661312600  gdb-6.3a.tar.bz2
+c50e2bdb5a2f3f1e743d091fe9912ff934cb6bb6  gdb-6.5a.tar.bz2
+c50e2bdb5a2f3f1e743d091fe9912ff934cb6bb6  gdb-6.5.tar.bz2
+00496289b7412e53c2c47ade8cf9348cdde0f7c8  gdb-6.8a.tar.bz2
+14daf8ccf1307f148f80c8db17f8e43f545c2691  gdb-7.2a.tar.bz2
+04ba2906279b16b5f99c4f6b25942843a3717cdb  gdb-7.9.1.tar.xz
+023556a6d6effa1ffaadf0007cc4458cbe8dde3d  gdb-8.2.1.tar.xz
+e0fe90ede22f7f16bbde7bdea791a835f2773fc9  gettext-0.19.8.1.tar.xz
+1157be3fe63baa81b7ba104a103337775a6ed06f  glibc-2.21.tar.xz
+a2254adbc3486d24b56571cb464f77657579f6f1  glibc-2.2.5.tar.gz
+ccb5dc9e51a9884df8488f86982439d47b283b2a  glibc-2.28.tar.xz
+c8376086203fa5e39dc869235ab8a400ed747c44  glibc-2.29.tar.xz
+82d0487419f1bdbf2dee439c344e89d6af47e558  glibc-2.3.6.tar.bz2
+513bb600a0027a97ef88d38081e1070c2b994c44  glibc-2.3.tar.bz2
+13de149245b84af770eddafe842acb208929352b  glibc-2.9.tar.bz2
+2d3970f7b1989e2f62725def60d83f6c1b64cc4f  glibc-linuxthreads-2.2.5.tar.gz
+10190168bf948556afdfff46f87f9208402d810f  glibc-linuxthreads-2.3.6.tar.bz2
+599f44dd21c653a115ebf9dbb73eeff9d89b4f86  glibc-ports-2.9.tar.bz2
+c011e8feaf1bb89158bd55eaabd7ef8fdd101a2c  gmp-4.3.2.tar.bz2
+6340edc7ceb95f9015a758c7c0d196eb0f441d49  gmp-5.0.1.tar.bz2
+1aaf78358ab9e34aeb61f3ae08174ee9118ece98  gmp-6.0.0a.tar.xz
+9dc6981197a7d92f339192eea974f5eca48fcffe  gmp-6.1.2.tar.xz
+68faf698a12dae32dacfa230c80feb5de27a663e  isl-0.12.2.tar.xz
+259678a0b1d12f8bc45b9aaeaa14feded9d5b3e1  isl-0.14.tar.xz
+1e30e09a5fc2c9e1aa4bdb8c9c21fdff20a7cd12  isl-0.15.tar.bz2
+13237a66fc623517fc570408b90a11e60eb6b4b9  isl-0.18.tar.xz
+b1d96b7b44c72f86c98d4fbd4caaa7796b27681e  isl-0.20.tar.bz2
+c1d6ac5f182d19dd685c4dfd74eedbfe3992425d  libelf-0.8.13.tar.gz
+7af3149fa7c4bd1d3a36a30f02e95a0ebfd6b18f  libiconv-1.15.tar.gz
+4d2ec1db116fdd040c7a3e63561418c86c16b4db  linux-2.4.26.tar.gz
+37a6d260a4ddd52d48529cc50c41a1c794865085  linux-2.6.27.62.tar.gz
+54604b71d1ed246a880812de87391d7c5bdfc39e  linux-2.6.31.14.tar.bz2
+0eef1cf5cf18e42725309797f57e71234f3e39a8  linux-2.6.38.8.tar.bz2
+91cde819b7eb60a1f40c1a5fae4ef13641499435  linux-2.6.8.tar.gz
+dd8f8b0c43b83339a42246d322cb48c6f2323236  linux-2.6.9.tar.bz2
+7470198ae35c21222636f6de0a8d35269f322240  linux-2.6.9.tar.gz
+81235fae89d3c00468d54c3670ee3651fc4c59ae  linux-3.10.4.tar.gz
+bf50396b2ecacc32acf28d183864d617699c0768  linux-3.2.101.tar.xz
+0e3424454b80e11cc0bf0333b2db4656d38e3c7d  linux-4.0.4.tar.xz
+4ee382a528e8010549f2df630a41d615f8bbbf91  linux-4.20.8.tar.xz
+e72c9b260995b269c9fb9248ed468c18fb01f3fd  linux-libc-headers-2.6.12.0.tar.bz2
+8df2acc8bc135a229917de6ef814f416d38124ca  ltrace_0.7.3.orig.tar.bz2
+5072d82ab50ec36cc8c0e320b5c377adb48abe70  mpc-1.0.2.tar.gz
+b019d9e1d27ec5fb99497159d43a3164995de2d0  mpc-1.1.0.tar.gz
+7ca93006e38ae6e53a995af836173cf10ee7c18c  mpfr-2.4.2.tar.bz2
+8ae8bc72ac26a0f17ad9f57c520264c056c64770  mpfr-3.0.0.tar.bz2
+03e593cc6e26639ef5e60be1af8dc527209e5172  mpfr-3.1.2.tar.xz
+52c1f2a4c9a202f46cf3275a8d46b562aa584208  mpfr-4.0.2.tar.xz
+3e042e5f2c7223bffdaac9646a533b8c758b65b5  ncurses-5.9.tar.gz
+57acf6bc24cacd651d82541929f726f4def780cc  ncurses-6.1.tar.gz
+82e378ae860308da57a4ec0327b8de150dce9451  newlib-3.1.0.20181231.tar.gz
+b4a054adb74563fc121bcd19b158f58955a20a33  strace-4.26.tar.xz
+5554c2fd8ffae5c1e2b289b2024aa85a0889c989  strace-4.5.19.tar.bz2
+e1cb0d5c92da8e9a8c2635dfa249c341dfd00322  zlib-1.2.11.tar.xz
