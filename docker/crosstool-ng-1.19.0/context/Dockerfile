@@ -39,7 +39,7 @@ RUN sed -i 's/ALL=(ALL:ALL) ALL/ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
 # Crosstool-NG 1.24.0 Dependencies
 RUN apt-get update && apt-get install -y \
     gcc g++ gperf bison flex texinfo help2man make libncurses5-dev \
-    autoconf automake libtool  gawk wget bzip2 \
+    autoconf automake libtool subversion gawk wget bzip2 \
     unzip patch libstdc++6 rsync gettext bc libexpat1-dev
 
 # User defaults, ideally setup to match existing user's info with `whoami` and `id`.
