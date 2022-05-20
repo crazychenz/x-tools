@@ -1,0 +1,9 @@
+#!/bin/sh
+
+: ${WD_PREFIX:=$(pwd)/../}
+STAGER_STARTER_TARGET=$1
+STAGER_TARGET_ALIAS=$2
+
+mkdir -p ${WD_PREFIX}builds/$STAGER_TARGET_ALIAS/
+cp scripts/$STAGER_STARTER_TARGET ${WD_PREFIX}builds/$STAGER_TARGET_ALIAS/staged-config.sh
+
